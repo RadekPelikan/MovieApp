@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:controller="com.movieapp.movieapp.controllers.admin.AdminDashboard" maxHeight="-Infinity"
+            maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+
+    <TabPane prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" fx:id="tabs">
+        <tabs >
+            <Tab text="New Movie">
+                <fx:include source="movie-view.fxml"/>
+            </Tab>
+            <Tab text="New Room">
+                <fx:include source="room-view.fxml"/>
+            </Tab>
+            <Tab text="New Screening">
+                <fx:include source="screening-view.fxml"/>
+            </Tab>
+        </tabs>
+    </TabPane>
+    <Button layoutX="511.0" mnemonicParsing="false" onAction="#onLogOut" prefHeight="29.0" prefWidth="89.0"
+            text="Log out"/>
+
+</AnchorPane>

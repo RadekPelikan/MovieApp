@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.movieapp.movieapp.controllers.admin.RoomCreation">
+   <children>
+      <Label layoutX="25.0" layoutY="160.0" text="Create New Room">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <VBox layoutX="370.0" layoutY="106.0" prefHeight="280.0" prefWidth="216.0" spacing="5.0">
+         <children>
+            <VBox prefHeight="9.0" prefWidth="216.0">
+               <children>
+                  <Label text="Name" />
+                  <TextField fx:id="nameInput" />
+               </children>
+            </VBox>
+            <HBox prefHeight="40.0" prefWidth="216.0" spacing="10.0">
+               <children>
+                  <VBox prefHeight="42.0" prefWidth="162.0">
+                     <children>
+                        <Label text="Street" />
+                        <TextField fx:id="streetInput" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="42.0" prefWidth="111.0">
+                     <children>
+                        <Label text="Street no." />
+                        <TextField fx:id="streetNoInput" prefHeight="25.0" prefWidth="120.0" />
+                     </children>
+                  </VBox>
+               </children></HBox>
+            <HBox layoutX="10.0" layoutY="57.0" prefHeight="40.0" prefWidth="216.0" spacing="10.0">
+               <children>
+                  <VBox prefHeight="42.0" prefWidth="162.0">
+                     <children>
+                        <Label text="City" />
+                        <TextField fx:id="cityInput" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="42.0" prefWidth="111.0">
+                     <children>
+                        <Label text="ZIP code" />
+                        <TextField fx:id="zipInput" prefHeight="25.0" prefWidth="120.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="104.0" prefHeight="50.0" prefWidth="216.0" spacing="10.0">
+               <children>
+                  <VBox prefHeight="50.0" prefWidth="111.0">
+                     <children>
+                        <Label text="Capacity" />
+                        <Spinner fx:id="capacityInput" />
+                     </children>
+                  </VBox>
+                  <VBox layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="129.0">
+                     <children>
+                        <Label fx:id="statusMessage" prefHeight="63.0" prefWidth="150.0" textFill="RED" wrapText="true" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <Button mnemonicParsing="false" onAction="#onPublish" prefHeight="25.0" prefWidth="237.0" text="PUBLISH" />
+         </children>
+      </VBox>
+   </children>
+</Pane>
