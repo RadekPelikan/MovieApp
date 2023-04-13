@@ -65,7 +65,7 @@
                   </VBox>
                </children>
             </HBox>
-            <Button mnemonicParsing="false" onAction="#onPublish" prefHeight="25.0" prefWidth="237.0" text="PUBLISH" />
+            <Button mnemonicParsing="false" onAction="#onPublish" prefHeight="25.0" prefWidth="237.0" text="Publish" />
          </children>
       </VBox>
    </children>

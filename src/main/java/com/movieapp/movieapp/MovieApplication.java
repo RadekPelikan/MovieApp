@@ -15,7 +15,7 @@ public class MovieApplication extends Application {
     public void start(Stage stage) throws IOException {
         Scene selectUserScene = createScene("user-select-view.fxml");
         MovieApplication.stage = stage;
-        stage.setTitle("Hello!");
+        stage.setTitle("MovieApp");
         stage.setResizable(false);
         stage.setScene(selectUserScene);
         stage.show();
